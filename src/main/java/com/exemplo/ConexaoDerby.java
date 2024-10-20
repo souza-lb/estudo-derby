@@ -5,16 +5,11 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-// É apenas um código de exemplo para você constatar o funcionamento da conexão.
-// Num cenário ideal você deveria usar PreparedStatement.
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class ConexaoDerby {
-    
-    // Como estou usando o Derby Embbbed não preciso usar a url completa 
-    // indicando a porta como o exemplo abaixo
-    // JDBC_URL = "jdbc:derby://localhost:1527/myDB;create=true";
-    
+    private static final Logger LOGGER = Logger.getLogger(ConexaoDerby.class.getName());
     private static final String JDBC_URL = "jdbc:derby:myDB;create=true";
     private static final String USER = "admin";
     private static final String PASSWORD = "adminpassword";
@@ -24,26 +19,37 @@ public class ConexaoDerby {
              Statement stmt = conn.createStatement()) {
 
             // Apaga a tabela Aluno se ela existir.
+            String dropTableSQL = "DROP TABLE Aluno";
+            LOGGER.log(Level.INFO, "Executando SQL: {0}", dropTableSQL);
             try {
-                stmt.executeUpdate("DROP TABLE Aluno");
+                stmt.executeUpdate(dropTableSQL);
             } catch (SQLException e) {
-                // Ignora o erro se a tabela não existir
-                System.out.println("A tabela não existia. Criando uma nova.");
+                // Ignora o erro se a tabela não existir.
+                LOGGER.log(Level.INFO, "A tabela não existia. Criando uma nova.");
             }
 
             // Cria a tabela Aluno.
-            stmt.executeUpdate("CREATE TABLE Aluno (nome VARCHAR(100), idade INT, curso VARCHAR(100))");
+            String createTableSQL = "CREATE TABLE Aluno (nome VARCHAR(100), idade INT, curso VARCHAR(100))";
+            LOGGER.log(Level.INFO, "Executando SQL: {0}", createTableSQL);
+            stmt.executeUpdate(createTableSQL);
 
-            // Insere dados de exemplo
+            // Insere dados de exemplo.
+            String insertSQL = "INSERT INTO Aluno (nome, idade, curso) VALUES ('{0}', {1}, '{2}')";
+            LOGGER.log(Level.INFO, "Executando SQL: {0}", insertSQL);
             stmt.executeUpdate("INSERT INTO Aluno (nome, idade, curso) VALUES ('Ana', 23, 'Engenharia')");
             stmt.executeUpdate("INSERT INTO Aluno (nome, idade, curso) VALUES ('Bruno', 25, 'Medicina')");
             stmt.executeUpdate("INSERT INTO Aluno (nome, idade, curso) VALUES ('Carol', 22, 'Direito')");
 
             // Lista os dados da tabela.
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Aluno");
+            String selectSQL = "SELECT * FROM Aluno";
+            LOGGER.log(Level.INFO, "Executando SQL: {0}", selectSQL);
+            System.out.println("=======================================================");
+            ResultSet rs = stmt.executeQuery(selectSQL);
             while (rs.next()) {
                 System.out.println("Nome: " + rs.getString("nome") + ", Idade: " + rs.getInt("idade") + ", Curso: " + rs.getString("curso"));
             }
+            System.out.println("=======================================================");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
