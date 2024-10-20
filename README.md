@@ -34,10 +34,13 @@ Repare que estou usando o JDK 17.
 
   ![Dependências](dependencias.png)
 
+  Rodando o projeto no estado atual dele, você obterá a seguinte saída:
+
+  ![Saída Esperada](saida.png)
 
 
   Faça testes, clique com o botão direito e remova algumas dependências , quebre o funcionamento do código observe as mensagens de erro.
-  Aqui por exemplo eu reproduzi o erro que o professor relatou:
+  Aqui por exemplo eu reproduzi o erro que o professor relatou: (Eu forçei o erro removendo as dependências do projeto)
 
-    ![Erro Driver](erro-derby.png)
+  ![Erro Driver](erro-derby.png)
 
