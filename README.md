@@ -46,7 +46,7 @@ Repare que estou usando o JDK 17.
 
 
   Outra vantagem é essa quebra de dependência de um IDE específico. Usando o Maven em qualquer ambiente de desenvolvimento que o suporte
-  fica fácio reconstruir o projeto e rodar sem grande trabalho ou modificação. Aqui por exemplo estou rodando o mesmo projeto no IDE Eclipse.
+  fica fácil reconstruir o projeto e rodar sem grande trabalho ou modificação. Aqui por exemplo estou rodando o mesmo projeto no IDE Eclipse.
 
 
   ![Import Maven Eclipse](import-maven-eclipse.png)
