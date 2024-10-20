@@ -40,7 +40,7 @@ Repare que estou usando o JDK 17.
 
 
   Faça testes, clique com o botão direito e remova algumas dependências , quebre o funcionamento do código observe as mensagens de erro.
-  Aqui por exemplo eu reproduzi o erro que o professor relatou: (Eu forçei o erro removendo as dependências do projeto)
+  Aqui por exemplo eu reproduzi o erro que o professor relatou: (Eu forçei o erro removendo o driver do Derby)
 
   ![Erro Driver](erro-derby.png)
 
