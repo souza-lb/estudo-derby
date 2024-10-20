@@ -1,3 +1,5 @@
+Repare que estou usando o JDK 17.
+
 * Baixe os arquivos deste repositório (conforme a primeira imagem abaixo)
 * Vá na pasta que você baixou o arquivo "estudo-derby-main.zip" e extraia usando o descompactador de sua preferência (pode ser o nativo do sistema).
 * Abra o seu NetBeans (pode ser o ide java que você quiser)
