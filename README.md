@@ -1,5 +1,5 @@
 * Baixe os arquivos deste repositório (conforme a primeira imagem abaixo)
-* Vá na pasta que você baixou os arquivos e extraia o arquivo zipado.
+* Vá na pasta que você baixou o arquivo "estudo-derby-main.zip" e extraia usando o descompactador de sua preferência (pode ser o nativo do sistema).
 * Abra o seu NetBeans (pode ser o ide java que você quiser)
 * Selecione no menu arquivo (File)
 * Em seguida abrir projeto (Open Project)
