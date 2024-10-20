@@ -1,3 +1,6 @@
+* Baixe os arquivos deste repositório (conforme a primeira imagem abaixo)
+* Vá na pasta que você baixou os arquivos e extraia o arquivo zipado.
+* Abra o seu NetBeans (pode ser o ide java que você quiser)
 * Selecione no menu arquivo (File)
 * Em seguida abrir projeto (Open Project)
 * Selecione a pasta na qual você baixou e fez a extração dos arquivos deste repositório
