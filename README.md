@@ -27,6 +27,14 @@ Repare que estou usando o JDK 17.
 
   ![Exemplo Derby](exemplo-derby.png)
 
+  Aqui você pode observar as dependências usadas nesse projeto de exemplo (Viu como fica mais prático).
+  Isso evita o trabalho de você ir em cada site baixar dependência por dependência. Tudo fica uniforme e garante que
+  funcione em qualquer máquina (basta você ter o Java,o IDE de sua preferência e o Maven). Lembrando que o Maven geralemnte vai instalado
+  com o seu IDE.
+
+  ![Dependências](dependencias.png)
+
+
 
   Faça testes, clique com o botão direito e remova algumas dependências , quebre o funcionamento do código observe as mensagens de erro.
   Aqui por exemplo eu reproduzi o erro que o professor relatou:
