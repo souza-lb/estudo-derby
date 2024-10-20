@@ -45,7 +45,7 @@ Repare que estou usando o JDK 17.
   ![Erro Driver](erro-derby.png)
 
 
-  Outra vantagem é essa quebra de dependência de um IDE específico. Usando o Maven em qualquer ambiente de desenvolvimento que o suporte
+  Outra vantagem é dispensar o uso de um IDE específico. Usando o Maven em qualquer ambiente de desenvolvimento que o suporte
   fica fácil reconstruir o projeto e rodar sem grande trabalho ou modificação. Aqui por exemplo estou rodando o mesmo projeto no IDE Eclipse.
 
 
