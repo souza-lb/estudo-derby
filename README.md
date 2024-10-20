@@ -52,7 +52,8 @@ Repare que estou usando o JDK 17.
   ![Import Maven Eclipse](import-maven-eclipse.png)
 
 
-  Projeto rodando no Eclipse.
+  Projeto rodando no Eclipse. Repare que estou usando o mesmo código, as mesmas dependências, o mesmo arquivo pom.xml. O que mudou foi que estou
+  usando um tema escuro no Eclipse ( minha visão agradece ). A saída em ambos os ambientes é exatamente a mesma.
 
 
   ![Projeto Rodando Eclipse](projeto-rodando-eclipse.png)
