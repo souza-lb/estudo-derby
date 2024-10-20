@@ -25,5 +25,11 @@ Repare que estou usando o JDK 17.
   
   Projeto rodando:
 
-  ![Exemplo Derby](exemplo-derby.png)  
+  ![Exemplo Derby](exemplo-derby.png)
+
+
+  Faça testes, clique com o botão direito e remova algumas dependências , quebre o funcionamento do código observe as mensagens de erro.
+  Aqui por exemplo eu reproduzi o erro que o professor relatou:
+
+    ![Erro Driver](erro-derby.png)
 
